@@ -5,15 +5,20 @@ import {
   SafeAreaView,
   useColorScheme,
   StyleSheet,
+  ScrollView,
 } from 'react-native';
 import FlatCard from './components/FlatCard';
+import ElevatedCards from './components/ElevatedCards';
 
 function App() {
   const isDarkMode = useColorScheme() === 'dark';
   return (
-    <View>
-      <FlatCard />
-    </View>
+    <SafeAreaView style={{flex: 1}}>
+      <ScrollView>
+        <FlatCard />
+        <ElevatedCards />
+      </ScrollView>
+    </SafeAreaView>
   );
 }
 
