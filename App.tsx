@@ -1,7 +1,5 @@
 import React from 'react';
 import {
-  View,
-  Text,
   SafeAreaView,
   useColorScheme,
   StyleSheet,
@@ -10,6 +8,7 @@ import {
 import FlatCard from './components/FlatCard';
 import ElevatedCards from './components/ElevatedCards';
 import FancyCards from './components/FancyCards';
+import ActionCard from './components/ActionCard';
 
 function App() {
   const isDarkMode = useColorScheme() === 'dark';
@@ -19,6 +18,7 @@ function App() {
         <FlatCard />
         <ElevatedCards />
         <FancyCards />
+        <ActionCard />
       </ScrollView>
     </SafeAreaView>
   );
